@@ -1,0 +1,117 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26;
+}
+
+.sidebar {
+  background-color: white;
+  border-right: 1px solid lightgray;
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+div.logo {
+  width: 100%;
+  height: 300px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.top {
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  width: 80%;
+  height: 20%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  margin-left: 20px;
+  text-align: left;
+}
+.top div {
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 350px;
+  display: inline-block;
+  margin-left: 200px;
+}
+.top .item a {
+  top: 40%;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.top .item.selected {
+  border-bottom: 10px solid crimson;
+}
+
+.main {
+  text-align: center;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  height: 80%;
+}
+.card {
+  background-color: white;
+  border: 1px solid grey;
+  width: 600px;
+  height: 800px;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  font-weight: bold;
+}
+.coll {
+  margin: 13px;
+  width: 250px;
+  display: inline-block;
+}
+p {
+  margin: 0;
+  text-align: left;
+}
+h4 {
+  color: gray;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.more {
+  margin-top: 150px;
+  margin-left: 20px;
+  margin-right: 20px;
+  bottom: 0;
+}
+.more button {
+  background-color: white;
+  height: 100px;
+  width: 100%;
+  border: 3px solid crimson;
+  margin: auto;
+  font-size: 26;
+  font-weight: bold;
+  color: crimson;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  .top {
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+  }
+}
